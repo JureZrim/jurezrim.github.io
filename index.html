@@ -1,96 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="generator" content="Hugo 0.47">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="ULPVQF4ncdnqCXgmWBamgK9sr9vopCq-8Cc_ErvfYZo" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://jurezrim.github.io/sitemap.xml">
+    
+    <title>Jure Zrim</title>
+    <script type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Jure Zrim", "url" : "https://jurezrim.github.io", "sameAs" : null } </script> 
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="I'm a doctoral student in Agroecology at University of Helsinki. My research focuses on effects of biochar and other soil amendments on soil ecosystems. My work integrates field and laboratory research to explore sustainable agricultural practices and their role in mitigating climate change.">
+    <meta name="keywords" content="Jure Zrim, Jure, Zrim, Agroecology, AGFOREE, PhD, Soil, Science, Research">
+    <meta name="author" content="Jure Zrim">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jure Zrim">
+    <meta name="application-name" content="Jure Zrim">
+    <meta property="og:site_name" content="Jure Zrim">
+    <meta property="og:description" content="I'm a doctoral student in Agroecology at University of Helsinki. My research focuses on effects of biochar and other soil amendments on soil ecosystems. My work integrates field and laboratory research to explore sustainable agricultural practices and their role in mitigating climate change.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jurezrim.github.io/">
+    <meta property="og:image" content="https://jurezrim.github.io/files/headshot_small.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jure Zrim">
+    <meta name="twitter:description" content="I'm a doctoral student in Agroecology at University of Helsinki. My research focuses on effects of biochar and other soil amendments on soil ecosystems. My work integrates field and laboratory research to explore sustainable agricultural practices and their role in mitigating climate change.">
+    <meta name="twitter:image" content="https://jurezrim.github.io/files/headshot_small.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: rgb(42, 46, 51);
         }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
+
+        h1, h2, h3, p, a {
+            color: rgb(42, 46, 51);
         }
+
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
         }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 1rem;
+
+         h2 {
+            font-weight: 400;
         }
-        section {
-            margin-bottom: 2rem;
+
+        h3 {
+            font-weight: 700;
         }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            flex-wrap: wrap;
         }
-        .publication {
-            margin-bottom: 1rem;
+
+        div#center {
+            float: center;
+            margin-left: max(15%,50% - 450px);
+            margin-right: max(25%,50% - 450px);
+            width: min(70%,700px);
         }
-        .links a {
-            margin-right: 1rem;
-            color: #0066cc;
+        div#contact{
+            height:260px;
+        }
+        div.text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin-top: 0px;
+            padding-top: 0px;
+            font-size: 15px;
+            color: rgb(42, 46, 51);
+        }
+        html {
+            background-color: white;
+        }
+        div#center h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        div.buttonbar {
+            color: rgb(42, 46, 51);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 5px;
+        }
+        div.popup {
+            margin-top: 10px;
+            text-align: left;
+        }
+        div.popup p {
+            margin: 0;
+        }
+        .bracket-button, .pdf-link {
+            color: rgb(42, 46, 51);
+            text-decoration: none;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        .bracket-button:hover, .pdf-link:hover {
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(42, 46, 51);
+        }
+        a:hover {
+            color: rgb(37, 39, 41);
+            text-decoration: underline;
+        }
+        
+        .icon-container > a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: rgb(42, 46, 51);
+            margin-bottom: 5px;
+        }
+        
+        .icon-container i {
+            margin-right: 5px;
+            margin-bottom: -13px;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        
+        .icon-container a:hover {
+            color: rgb(37, 39, 41);
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+            color: rgb(42, 46, 51);
+            margin-top: 5px;
+        }
+
+        .paper-section {
+            margin-bottom: 20px;
+        }
+
+        .paper-title {
+            margin: 0 0 5px 0;
+            color: rgb(42, 46, 51);
             text-decoration: none;
         }
-        .links a:hover {
+
+        .paper-authors {
+            margin: 0 0 3px 0;
+            font-size: 14px;
+            color: rgb(42, 46, 51);
+        }
+
+        .paper-authors a {
+            text-decoration: none;
+            color: rgb(42, 46, 51);
+        }
+
+        .paper-authors a:hover {
             text-decoration: underline;
+        }
+
+        .paper-journal {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            color: rgb(42, 46, 51);
+            font-style: italic;
+        }
+
+        .title-to-buttons {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Jure Zrim</h1>
-        <div class="subtitle">Biochar • University of Helsinki</div>
-        <div class="links">
-            <a href="mailto:your.email@institution.edu">Email</a>
-            <a href="https://github.com/yourusername">GitHub</a>
-            <a href="path/to/cv.pdf">CV</a>
-            <a href="https://scholar.google.com">Google Scholar</a>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1 style="text-align: justify;font-size: 26px; color: rgb(42, 46, 51);">Jure Zrim</h1>
+            <hr>
+            <img src="files/headshot_small.png" alt="Logo">
+            <div class="icon-container">
+                <a href="mailto:jure.zrim@helsinki.fi">
+                    <i class="fa-solid fa-envelope"></i>
+                    jure.zrim@helsinki.fi
+                </a>
+                <a href="https://researchportal.helsinki.fi/en/persons/jure-zrim">
+                    <i class="fa-solid fa-globe"></i>
+                    Research portal
+                </a>
+                <a href="https://biochar-hy.blogspot.com/p/university-of-helsinki-biochar-team.html">
+                    <i class="fa-solid fa-globe"></i>
+                    AgriChar Website
+                </a>
+                <a href="https://scholar.google.com/citations?user=sCLqLtYAAAAJ&hl=en&oi=ao">
+                    <i class="fa-brands fa-google-scholar"></i>
+                    Google Scholar
+                </a>
+                <a href="https://github.com/jurezrim">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="files/cv.pdf">
+                    <i class="fa-solid fa-file-lines"></i>
+                    CV 
+                </a>
+            </div>
+            <br>
+        </header>
+        <section>
+            <p>Hello! I'm a doctoral student in Agroecology at University of Helsinki. My research focuses on effects of biochar and other soil amendments on soil ecosystems.</p>
+            <p>My work integrates field and laboratory research to explore sustainable agricultural practices and their role in mitigating climate change.</p>
+            <hr>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>Brief introduction about your research interests and current position. Include your academic background and main areas of focus.</p>
-    </section>
+            <h2 style="font-size: 20px; color: rgb(42, 46, 51);">Work in Progress</h2>
+            <div class="paper-section">
+                <h3 class="paper-title">Impact of Recycled Fertilizers and Soil Amendments on Soil Carbon, Aggregate Stability, Water Retention, Gas Exchange, and Microbial Communities in Boreal Sandy Clay Soils</h3>
+                <p class="paper-authors">(with <a href="https://researchportal.helsinki.fi/fi/persons/mari-kaarina-unnbom">Mari Unnbom</a>, <a href="https://researchportal.helsinki.fi/en/persons/priit-tammeorg">Priit Tammeorg</a>, and <a href="https://researchportal.helsinki.fi/fi/persons/juha-helenius/">Juha Helenius</a>)</p>
+            </div>
+            <div class="paper-section">
+                <h3 class="paper-title">Impacts of Softwood Biochar on Soil Biota and Greenhouse Gas Emissions in Boreal Field Conditions</h3>
+            </div>
+            <div class="paper-section">
+                <h3 class="paper-title">Long-Term Effects of Biochar on Soil Microbial Communities: An Eight-Year Field Study</h3>
+            </div>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <div class="publication">
-            <p><strong>Paper Title</strong><br>
-            Authors (Year)<br>
-            Conference/Journal<br>
-            [<a href="#">PDF</a>] [<a href="#">Code</a>] [<a href="#">Data</a>]</p>
-        </div>
-    </section>
+            <hr>
+            <h2 style="font-size: 20px; color: rgb(42, 46, 51);">Publications</h2>
+            <div class="paper-section">
+                <h3 class="paper-title">Recycling eutrophic lake sediments into grass production: A four-year field experiment on agronomical and environmental implications</h3>
+                <p class="paper-authors">(with <a href="https://researchportal.helsinki.fi/fi/persons/mina-kiani">Mina Kiani</a>, <a href="https://researchportal.helsinki.fi/en/persons/asko-simojoki">Asko Simojoki</a>, <a href="https://researchportal.helsinki.fi/en/persons/olga-tammeorg">Olga Tammeorg</a>, <a href="https://researchportal.helsinki.fi/en/persons/petri-penttinen">Petri Penttinen</a>, <a href="">Tuuli Markkanen</a> and <a href="https://researchportal.helsinki.fi/en/persons/priit-tammeorg">Priit Tammeorg</a>)</p>
+                <p class="paper-journal">Science of the Total Environment, 2023</p>
+                <div class="buttonbar">
+                    <a href="javascript:void(0);" onclick="myFunction('abs2')" class="bracket-button">[Abstract]</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0048969723004965" class="bracket-button">[Publisher's Version]</a>
+                </div>
+                <div class="popup" id="abs2" style="display: none;">
+                    <p>Inefficient use of phosphorus (P) fertilizers leads to the transfer of P into water bodies, causing their eutrophication. Sediment removal is a promising lake restoration strategy that removes nutrients including P accumulated in lake sediments, and opens the opportunity to use removed nutrients in agriculture. In the present study, we investigated the effects of using a thick layer of sediment from the eutrophic Lake Mustijärv on plant growth, and estimated the environmental impacts of different sediment application methods by analyzing greenhouse gas emissions, N and P leaching, aggregate stability, and soil biota. The field experiment (2017–2020) was established on the lake shore with the following treatments: the agricultural control soil (Soil) surrounding the lake, pure sediment (Sed), biochar-treated sediment (SB), and biochar and soil mixed with sediment (SSB). The sediment-based treatments resulted in a similar grass growth performance to the Soil. The availability of most macro- and micronutrients including P (75 vs. 21 g m−3) were far greater in the Sed compared to the Soil. The sediment-based growing media emitted more CO2 than the Soil (579 vs. 400 mg CO2 − C m−2 h−1) presumably due to the high rate of organic matter decomposition. The bacterial and fungal community structures of the Sed were strongly differentiated from those of Soil. Also, Sed had lower bacterial diversity and a higher abundance of the bacterial phyla associated with solubilizing P including Proteobacteria and Chloroflexi. Sediment-based growing media increased more than seven times the risk of mineral N and P leaching, and the biochar treatment only had a short-lived beneficial effect on reduction of the sediment's leached P concentration. The sediment application rate should be adjusted to match the crop requirements to minimize greenhouse gas emissions and nutrient leaching when upscaling the case study to larger lakes with similar sediment properties.</p>
+                </div>
+            </div>
+            
+            <div class="paper-section">
+                <h3 class="paper-title">Potential of biochar to reduce greenhouse gas emissions and increase nitrogen use efficiency in boreal arable soils in the long-term</h3>
+                <p class="paper-authors">(with <a href="https://cals.ncsu.edu/crop-and-soil-sciences/people/skalu/">Subin Kalu</a>, <a href="https://researchportal.helsinki.fi/fi/persons/liisa-kulmala">Liisa Kulmala</a>, <a href="https://researchportal.helsinki.fi/fi/persons/kenneth-peltokangas">Kenneth Peltokangas</a>, <a href="https://researchportal.helsinki.fi/en/persons/priit-tammeorg">Priit Tammeorg</a>, <a href="https://www.luke.fi/fi/asiantuntijat/kimmo-rasa">Kimmo Rasa</a>, <a href="">Barbara Kitzler, <a href="https://researchportal.helsinki.fi/en/persons/mari-pihlatie">Mari Pihlatie and <a href="https://researchportal.helsinki.fi/en/persons/kristiina-karhu">Kristiina Karhu </a>)</p>
+                <p class="paper-journal">Frontiers in Environmental Science, 2022</p>
+                <div class="buttonbar">
+                    <a href="javascript:void(0);" onclick="myFunction('abs3')" class="bracket-button">[Abstract]</a>
+                    <a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2022.914766/full" class="bracket-button">[Publisher's Version]</a>
+                </div>
+               <div class="popup" id="abs3" style="display:none;">
+                    <p>Biochars have potential to provide agricultural and environmental benefits such as increasing soil carbon sequestration, crop yield, and soil fertility while reducing greenhouse gas (GHG) emissions and nitrogen leaching. However, whether these effects will sustain for the long-term is still unknown. Moreover, these effects were observed mostly in highly weathered (sub-) tropical soils with low pH and soil organic carbon (SOC). The soils in northern colder boreal regions have typically higher SOC and undergo continuous freeze-thaw cycles. Therefore, effects of biochars in these regions may be different from those observed in other climates. However, only a few biochar studies have been conducted in boreal regions. We aimed to assess the long-term effects of biochars on GHG emissions, yield-normalized non-CO2 GHG emissions (GHGI), and N dynamics in boreal soils. For this, we collected data from four existing Finnish biochar field experiments during 2018 growing season. The experiments were Jokioinen (Stagnosol), Qvidja (Cambisol), Viikki-1 (Stagnosol), and Viikki-2 (Umbrisol), where biochars were applied, 2, 2, 8, and 7 years before, respectively. The GHG emissions, crop yield, soil mineral N, and microbial biomass were measured from all fields, whereas, additional measurements of plant N contents and N leaching were conducted in Qvidja. Biochars increased CO2 efflux in Qvidja and Viikki-2, whereas, there were no statistically significant effects of biochars on the fluxes of N2O or CH4, but in Qvidja, biochars tended to reduce N2O fluxes at the peak emission points. The tendency of biochars to reduce N2O emissions seemed higher in soils with higher silt content and lower initial soil carbon. We demonstrated the long-term effects of biochar on increased crop yield by 65% and reduced GHGI by 43% in Viikki-2. In Qvidja, the significant increment of plant biomass, plant N uptake, nitrogen use efficiency, and crop yield, and reduction of NO3−–N leaching by the spruce biochar is attributed to its ability to retain NO3−–N, which could be linked to its significantly higher specific surface area. The ability of the spruce biochar to retain soil NO3N and hence to reduce N losses, has implications for sustainable management of N fertilization.</p>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <footer>
+            <!-- Footer content can be added here if needed -->
+        </footer>
+    </div>
 
-    <section id="research">
-        <h2>Research</h2>
-        <p>Description of your current research projects and interests.</p>
-    </section>
-
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>List of courses taught or teaching assistantship positions.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Department Name<br>
-            Institution Name<br>
-            Address<br>
-            Email: your.email@institution.edu
-        </p>
-    </section>
-</body>
-</html>
+</body></html>
