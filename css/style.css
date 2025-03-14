@@ -1,4 +1,4 @@
-/* Base styles */
+/* Base https://github.com/jonthdiaz/digital-works/blob/aa2031a8055570fef5af0f647f2fe02009380cf0/templates/shared/layout.htmls */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -65,7 +65,7 @@ a:hover {
     flex: 1;
 }
 
-/* Contact icons */
+/* Contact icons - fixed alignment */
 .icon-container {
     display: flex;
     flex-direction: column;
@@ -73,14 +73,19 @@ a:hover {
 }
 
 .icon-container > a {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .icon-container i {
     margin-right: 8px;
-    font-size: 14px;
+    font-size: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Publications and papers */
