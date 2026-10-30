@@ -175,6 +175,12 @@ a:hover {
     line-height: 1.5;
 }
 
+.photo-grid .portrait-photo img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
 .photo-grid h3 {
     font-size: 16px;
 }
